@@ -37,3 +37,18 @@ describe('sayHello', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean when called', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    // it('should return the string "Hello, World!" when executed', function() {
+    //     expect(helloWorld()).toBe("Hello, World!");
+    // });
+    // it("should never return 'undefined' when called", function() {
+    //     expect(helloWorld()).not.toBe(undefined);
+    // });
+});

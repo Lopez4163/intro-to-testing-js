@@ -23,3 +23,8 @@ sayHello('Alex')
 sayHello('Pat')
 sayHello('World')
 
+const isFive = (x) => {
+    return x === 5;
+
+}
+
