@@ -45,10 +45,21 @@ describe('isFive', function() {
     it('should return a boolean when called', function() {
         expect(typeof isFive()).toBe("boolean");
     });
-    // it('should return the string "Hello, World!" when executed', function() {
-    //     expect(helloWorld()).toBe("Hello, World!");
+    it('should return true for the number or string 5', function() {
+        expect(isFive(5,'5')).toBe(true);
+    });
+
+});
+
+describe('isEven', function() {
+    it('should be a defined function', function() {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean when called', function() {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    // it('should return true for the number or string 5', function() {
+    //     expect(isFive(5,'5')).toBe(true);
     // });
-    // it("should never return 'undefined' when called", function() {
-    //     expect(helloWorld()).not.toBe(undefined);
-    // });
+
 });
